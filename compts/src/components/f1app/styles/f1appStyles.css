@@ -1,0 +1,74 @@
+.f1aContainer {
+    width: 25em;
+    height: 50em;
+    border-radius: 2em;
+    box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.f1aCategoryCards {
+    width: 22em;
+    height: 18em;
+    background-color: #000;
+    border-radius: 2em;
+    margin-bottom: 2em;
+    color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+.f1aCname {
+    font-size: 3em;
+    font-weight: 900;
+    transition: 0.3s ease-in;
+}
+
+.active {
+    padding: 0.5em;
+    border: 0.3em solid #EEE;
+    margin-bottom: 1em;
+}
+
+.f1aCategoryCardsActive {
+    width: 25em;
+    display: flex;
+    transition: 0.3s ease-in;
+    height: 46em;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.innerCard {
+    width: 21em;
+    height: 10em;
+    margin-bottom: 2em;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6em;
+    animation: innerCard 0.8s ease-in;
+}
+
+.innerCard > div {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+@keyframes innerCard {
+    0%{
+        transform: translateY(50em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
+}
